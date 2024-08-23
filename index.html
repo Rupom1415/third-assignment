@@ -238,10 +238,30 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-11 gap-6">
 
+                <!-- Hidden Card -->
+                <div class="border rounded-2xl p-6 hidden lg:visible lg:flex lg:col-span-7 items-center gap-5">
+                    <div class="rounded-2xl lg:w-[90%] lg:h-[100%] bg-center bg-cover bg-[url('./assets/img1.png')]">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-6">Commercial</h2>
+                        <p class="text-[#737373] mb-8">The barn house captivates with its blend of rustic charm and
+                            modern. The barn house
+                            captivates with its blend of rustic charm and modern .</p>
+                        <div class="justify-start">
+                            <a class="flex gap-4 font-bold text-xl link link-hover">View
+                                Details<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="black" class="size-6 bg-[#ABEF5F] rounded-full p-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 1st Card -->
-                <div class="border rounded-2xl p-6 lg:flex lg:col-span-7 items-center gap-5">
-                    <div class="rounded-2xl w-full">
-                        <img src="./assets/img1.png" alt="house" />
+                <div class="border rounded-2xl p-6 lg:hidden items-center gap-5">
+                    <div>
+                        <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto" src="./assets/img1.png" alt="house" />
                     </div>
                     <div>
                         <h2 class="text-2xl font-bold mb-4">Commercial</h2>
@@ -260,19 +280,41 @@
                 </div>
 
                 <!-- 2nd Card -->
-                <div class="lg:col-span-4">
-                    <img class="border rounded-2xl p-6 w-full" src="./assets/img2.png" alt="house" />
+                <div class="lg:col-span-4 border rounded-2xl overflow-hidden p-6">
+                    <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto justify-center" src="./assets/img2.png" alt="house" />
+                </div>
+
+                <!-- Hidden card -->
+                <div class="lg:col-span-3 border rounded-2xl lg:hidden overflow-hidden p-6">
+                    <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto" src="./assets/img5.png" alt="house" />
                 </div>
 
                 <!-- 3rd card -->
-                <div class="lg:col-span-3">
+                <div class="hidden lg:block lg:col-span-3">
                     <img class="border rounded-2xl p-6 w-full" src="./assets/img3.png" alt="house" />
                 </div>
 
                 <!-- 4rth card -->
-                <div class="bg-base-100 border rounded-2xl p-6 lg:flex lg:col-span-5 items-center gap-5">
-                    <div class="rounded-2xl w-full">
-                        <img src="./assets/img4.png" alt="house" />
+                <div class="bg-base-100 border rounded-2xl p-6 lg:flex lg:col-span-5 items-center gap-5 hidden lg:visible">
+                    <div class="rounded-2xl lg:w-[90%] lg:h-[100%] bg-center bg-cover bg-[url('./assets/img4.png')]">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-6">Commercial</h2>
+                        <p class="text-[#737373] mb-8">The barn house captivates with its blend of rustic charm and
+                            modern.</p>
+                        <div class="justify-start">
+                            <a class="flex gap-4 w-full md:w-auto  font-bold text-xl link link-hover">View
+                                Details<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="black" class="size-6 bg-[#ABEF5F] rounded-full p-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-base-100 border rounded-2xl p-6 lg:hidden items-center gap-5">
+                    <div>
+                        <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto" src="./assets/img4.png" alt="house" />
                     </div>
                     <div>
                         <h2 class="text-2xl font-bold mb-4">Commercial</h2>
@@ -288,9 +330,15 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Only Small screen card -->
+                <div class="lg:col-span-3 border rounded-2xl lg:hidden overflow-hidden p-6 ">
+                    <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto" src="./assets/img3.png" alt="house" />
+                </div>
+
                 <!-- 5th card -->
-                <div class="lg:col-span-3">
-                    <img class="border rounded-2xl p-6 w-full" src="./assets/img5.png" alt="house" />
+                <div class="lg:col-span-3 border rounded-2xl overflow-hidden p-6">
+                    <img class="rounded-2xl object-cover w-full h-[197px] md:h-auto" src="./assets/img5.png" alt="house" />
                 </div>
             </div>
         </section>
@@ -332,7 +380,9 @@
 
         </section>
     </main>
-    <footer class="footer footer-center bg-[#1C1C1C] text-[#E9E9E9] rounded p-10">
+
+    <!-- Footer Section -->
+    <footer class="footer footer-center bg-[#1C1C1C] text-[#E9E9E9] p-10">
         <div class="navbar-center">
             <a class="btn btn-ghost text-3xl font-extrabold"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="2" stroke="black" class="size-8 bg-[#ABEF5F] rounded-full p-1.5">
